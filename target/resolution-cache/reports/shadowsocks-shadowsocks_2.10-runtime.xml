@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="shadowsocks"
+		module="shadowsocks_2.10"
+		revision="0.1-SNAPSHOT"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150602105329"/>
+	<dependencies>
+		<module organisation="com.j256.ormlite" name="ormlite-android">
+			<revision name="4.47" status="release" pubdate="20130908231823" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ormlite.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="ISC License" url="http://ormlite.com/docs/license"/>
+				<metadata-artifact status="no" details="" size="5385" time="0" location="/home/zouyiran/.ivy2/cache/com.j256.ormlite/ormlite-android/ivy-4.47.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/j256/ormlite/ormlite-android/4.47/ormlite-android-4.47.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="4.47" rev-constraint-default="4.47" rev-constraint-dynamic="4.47" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="ormlite-android" type="jar" ext="jar" status="no" details="" size="51769" time="0" location="/home/zouyiran/.ivy2/cache/com.j256.ormlite/ormlite-android/jars/ormlite-android-4.47.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/j256/ormlite/ormlite-android/4.47/ormlite-android-4.47.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.j256.ormlite" name="ormlite-core">
+			<revision name="4.47" status="release" pubdate="20130908231505" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ormlite.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="16">
+				<license name="ISC License" url="http://ormlite.com/docs/license"/>
+				<metadata-artifact status="no" details="" size="4299" time="0" location="/home/zouyiran/.ivy2/cache/com.j256.ormlite/ormlite-core/ivy-4.47.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/j256/ormlite/ormlite-core/4.47/ormlite-core-4.47.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="4.47" rev-constraint-default="4.47" rev-constraint-dynamic="4.47" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.j256.ormlite" name="ormlite-android" conf="default, compile, runtime, master" rev="4.47" rev-constraint-default="4.47" rev-constraint-dynamic="4.47" callerrev="4.47"/>
+				<artifacts>
+					<artifact name="ormlite-core" type="jar" ext="jar" status="no" details="" size="291296" time="0" location="/home/zouyiran/.ivy2/cache/com.j256.ormlite/ormlite-core/jars/ormlite-core-4.47.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/j256/ormlite/ormlite-core/4.47/ormlite-core-4.47.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.nostra13.universalimageloader" name="universal-image-loader">
+			<revision name="1.8.4" status="release" pubdate="20130413172535" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<metadata-artifact status="no" details="" size="4530" time="0" location="/home/zouyiran/.ivy2/cache/com.nostra13.universalimageloader/universal-image-loader/ivy-1.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/nostra13/universalimageloader/universal-image-loader/1.8.4/universal-image-loader-1.8.4.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="universal-image-loader" type="jar" ext="jar" status="no" details="" size="122698" time="0" location="/home/zouyiran/.ivy2/cache/com.nostra13.universalimageloader/universal-image-loader/jars/universal-image-loader-1.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/nostra13/universalimageloader/universal-image-loader/1.8.4/universal-image-loader-1.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.mrengineer13" name="snackbar">
+			<revision name="0.5.0" status="release" pubdate="20141211085647" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/MrEngineer13/SnackBar" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2409" time="0" location="/home/zouyiran/.ivy2/cache/com.github.mrengineer13/snackbar/ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/mrengineer13/snackbar/0.5.0/snackbar-0.5.0.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="snackbar" type="aar" ext="aar" status="no" details="" size="22831" time="0" location="/home/zouyiran/.ivy2/cache/com.github.mrengineer13/snackbar/aars/snackbar-0.5.0.aar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/mrengineer13/snackbar/0.5.0/snackbar-0.5.0.aar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.android.gms" name="play-services-ads">
+			<revision name="6.5.87" status="release" pubdate="20141214141444" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<metadata-artifact status="no" details="" size="2411" time="0" location="/home/zouyiran/.ivy2/cache/com.google.android.gms/play-services-ads/ivy-6.5.87.xml" searched="false" origin-is-local="true" origin-location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-ads/6.5.87/play-services-ads-6.5.87.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="6.5.87" rev-constraint-default="6.5.87" rev-constraint-dynamic="6.5.87" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-services-ads" type="aar" ext="aar" status="no" details="" size="380312" time="0" location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-ads/6.5.87/play-services-ads-6.5.87.aar">
+						<origin-location is-local="true" location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-ads/6.5.87/play-services-ads-6.5.87.aar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.support" name="support-v4">
+			<revision name="21.0.3" status="release" pubdate="20141222135454" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="11">
+				<metadata-artifact status="no" details="" size="2392" time="0" location="/home/zouyiran/.ivy2/cache/com.android.support/support-v4/ivy-21.0.3.xml" searched="false" origin-is-local="true" origin-location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3.pom"/>
+				<caller organisation="com.google.android.gms" name="play-services-base" conf="default, compile, runtime, master" rev="21.0.0" rev-constraint-default="21.0.0" rev-constraint-dynamic="21.0.0" callerrev="6.5.87"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="21.0.3" rev-constraint-default="21.0.3" rev-constraint-dynamic="21.0.3" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="support-v4" type="aar" ext="aar" status="no" details="" size="860830" time="0" location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3.aar">
+						<origin-location is-local="true" location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3.aar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="21.0.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="-1">
+				<evicted-by rev="21.0.3"/>
+				<caller organisation="com.google.android.gms" name="play-services-base" conf="default, compile, runtime, master" rev="21.0.0" rev-constraint-default="21.0.0" rev-constraint-dynamic="21.0.0" callerrev="6.5.87"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="21.0.3" rev-constraint-default="21.0.3" rev-constraint-dynamic="21.0.3" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.support" name="support-annotations">
+			<revision name="21.0.3" status="release" pubdate="20141222135452" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="2219" time="0" location="/home/zouyiran/.ivy2/cache/com.android.support/support-annotations/ivy-21.0.3.xml" searched="false" origin-is-local="true" origin-location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.pom"/>
+				<caller organisation="com.android.support" name="support-v4" conf="compile, runtime" rev="21.0.3" rev-constraint-default="21.0.3" rev-constraint-dynamic="21.0.3" callerrev="21.0.3"/>
+				<artifacts>
+					<artifact name="support-annotations" type="jar" ext="jar" status="no" details="" size="11467" time="0" location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar">
+						<origin-location is-local="true" location="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.android.gms" name="play-services-base">
+			<revision name="6.5.87" status="release" pubdate="20141214141444" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="10">
+				<metadata-artifact status="no" details="" size="2402" time="0" location="/home/zouyiran/.ivy2/cache/com.google.android.gms/play-services-base/ivy-6.5.87.xml" searched="false" origin-is-local="true" origin-location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-base/6.5.87/play-services-base-6.5.87.pom"/>
+				<caller organisation="com.google.android.gms" name="play-services-ads" conf="default, compile, runtime, master" rev="6.5.87" rev-constraint-default="6.5.87" rev-constraint-dynamic="6.5.87" callerrev="6.5.87"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="6.5.87" rev-constraint-default="6.5.87" rev-constraint-dynamic="6.5.87" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-services-base" type="aar" ext="aar" status="no" details="" size="1131403" time="0" location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-base/6.5.87/play-services-base-6.5.87.aar">
+						<origin-location is-local="true" location="/opt/android-sdk-linux/extras/google/m2repository/com/google/android/gms/play-services-base/6.5.87/play-services-base-6.5.87.aar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.simonvt.menudrawer" name="menudrawer">
+			<revision name="3.0.6" status="release" pubdate="20140314002717" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/SimonVT/android-menudrawer" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="Apache License Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2461" time="0" location="/home/zouyiran/.ivy2/cache/net.simonvt.menudrawer/menudrawer/ivy-3.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/simonvt/menudrawer/menudrawer/3.0.6/menudrawer-3.0.6.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="3.0.6" rev-constraint-default="3.0.6" rev-constraint-dynamic="3.0.6" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="menudrawer" type="aar" ext="aar" status="no" details="" size="69035" time="0" location="/home/zouyiran/.ivy2/cache/net.simonvt.menudrawer/menudrawer/aars/menudrawer-3.0.6.aar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/simonvt/menudrawer/menudrawer/3.0.6/menudrawer-3.0.6.aar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.glxn.qrgen" name="android">
+			<revision name="2.0" status="release" pubdate="20141107004322" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<metadata-artifact status="no" details="" size="6500" time="0" location="/home/zouyiran/.ivy2/cache/net.glxn.qrgen/android/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/glxn/qrgen/android/2.0/android-2.0.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="android" type="jar" ext="jar" status="no" details="" size="8756" time="0" location="/home/zouyiran/.ivy2/cache/net.glxn.qrgen/android/jars/android-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/glxn/qrgen/android/2.0/android-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.glxn.qrgen" name="core">
+			<revision name="2.0" status="release" pubdate="20141107004137" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kenglxn.github.io/QRGen/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache License v2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="6448" time="0" location="/home/zouyiran/.ivy2/cache/net.glxn.qrgen/core/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/glxn/qrgen/core/2.0/core-2.0.pom"/>
+				<caller organisation="net.glxn.qrgen" name="android" conf="default, compile, runtime, master" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="2.0"/>
+				<artifacts>
+					<artifact name="core" type="jar" ext="jar" status="no" details="" size="7081" time="0" location="/home/zouyiran/.ivy2/cache/net.glxn.qrgen/core/jars/core-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/glxn/qrgen/core/2.0/core-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.zxing" name="core">
+			<revision name="3.1.0" status="release" pubdate="20140522232817" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="6198" time="0" location="/home/zouyiran/.ivy2/cache/com.google.zxing/core/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/zxing/core/3.1.0/core-3.1.0.pom"/>
+				<caller organisation="net.glxn.qrgen" name="core" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="2.0"/>
+				<artifacts>
+					<artifact name="core" type="jar" ext="jar" status="no" details="" size="538421" time="0" location="/home/zouyiran/.ivy2/cache/com.google.zxing/core/jars/core-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/zxing/core/3.1.0/core-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.joanzapata.android" name="android-iconify">
+			<revision name="1.0.9" status="release" pubdate="20150130040154" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<metadata-artifact status="no" details="" size="7598" time="0" location="/home/zouyiran/.ivy2/cache/com.joanzapata.android/android-iconify/ivy-1.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/joanzapata/android/android-iconify/1.0.9/android-iconify-1.0.9.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="1.0.9" rev-constraint-default="1.0.9" rev-constraint-dynamic="1.0.9" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="android-iconify" type="jar" ext="jar" status="no" details="" size="104724" time="0" location="/home/zouyiran/.ivy2/cache/com.joanzapata.android/android-iconify/jars/android-iconify-1.0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/joanzapata/android/android-iconify/1.0.9/android-iconify-1.0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.zxing" name="android-integration">
+			<revision name="3.1.0" status="release" pubdate="20140522232840" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<metadata-artifact status="no" details="" size="6318" time="0" location="/home/zouyiran/.ivy2/cache/com.google.zxing/android-integration/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/zxing/android-integration/3.1.0/android-integration-3.1.0.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="android-integration" type="jar" ext="jar" status="no" details="" size="11171" time="0" location="/home/zouyiran/.ivy2/cache/com.google.zxing/android-integration/jars/android-integration-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/zxing/android-integration/3.1.0/android-integration-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-net" name="commons-net">
+			<revision name="3.3" status="release" pubdate="20130608065225" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<metadata-artifact status="no" details="" size="10151" time="0" location="/home/zouyiran/.ivy2/cache/commons-net/commons-net/ivy-3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/3.3/commons-net-3.3.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="3.3" rev-constraint-default="3.3" rev-constraint-dynamic="3.3" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="no" details="" size="280983" time="0" location="/home/zouyiran/.ivy2/cache/commons-net/commons-net/jars/commons-net-3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/3.3/commons-net-3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.kevinsawicki" name="http-request">
+			<revision name="5.6" status="release" pubdate="20140210061138" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/kevinsawicki/http-request" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3753" time="0" location="/home/zouyiran/.ivy2/cache/com.github.kevinsawicki/http-request/ivy-5.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/kevinsawicki/http-request/5.6/http-request-5.6.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="5.6" rev-constraint-default="5.6" rev-constraint-dynamic="5.6" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="http-request" type="jar" ext="jar" status="no" details="" size="34998" time="0" location="/home/zouyiran/.ivy2/cache/com.github.kevinsawicki/http-request/jars/http-request-5.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/kevinsawicki/http-request/5.6/http-request-5.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="dnsjava" name="dnsjava">
+			<revision name="2.1.7" status="release" pubdate="20150217233854" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.dnsjava.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="BSD 2-Clause license" url="http://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="no" details="" size="3553" time="0" location="/home/zouyiran/.ivy2/cache/dnsjava/dnsjava/ivy-2.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="2.1.7" rev-constraint-default="2.1.7" rev-constraint-dynamic="2.1.7" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="dnsjava" type="jar" ext="jar" status="no" details="" size="307637" time="0" location="/home/zouyiran/.ivy2/cache/dnsjava/dnsjava/jars/dnsjava-2.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140319054629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/zouyiran/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<caller organisation="shadowsocks" name="shadowsocks_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/home/zouyiran/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

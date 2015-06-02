@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/proxy_cat">
+
+        <com.github.shadowsocks.preferences.ProfileEditTextPreference
+
+                android:key="profileName"
+                android:summary="@string/profile_summary"
+                android:title="@string/profile">
+        </com.github.shadowsocks.preferences.ProfileEditTextPreference>
+        <!--android:defaultValue="Default"-->
+        <com.github.shadowsocks.preferences.SummaryEditTextPreference
+
+                android:key="proxy"
+                android:summary="@string/proxy_summary"
+                android:title="@string/proxy">
+        </com.github.shadowsocks.preferences.SummaryEditTextPreference>
+        <!--android:defaultValue="198.199.101.152"-->
+        <com.github.shadowsocks.preferences.SummaryEditTextPreference
+                android:inputType="number"
+
+                android:key="remotePort"
+                android:summary="@string/remote_port_summary"
+                android:title="@string/remote_port">
+        </com.github.shadowsocks.preferences.SummaryEditTextPreference>
+        <!--android:defaultValue="443"-->
+        <com.github.shadowsocks.preferences.SummaryEditTextPreference
+                android:inputType="number"
+
+                android:key="port"
+                android:summary="@string/port_summary"
+                android:title="@string/port">
+        </com.github.shadowsocks.preferences.SummaryEditTextPreference>
+        <!--android:defaultValue="1080"-->
+        <com.github.shadowsocks.preferences.PasswordEditTextPreference
+                android:inputType="textPassword"
+
+                android:key="sitekey"
+                android:summary="@string/sitekey_summary"
+                android:title="@string/sitekey">
+        </com.github.shadowsocks.preferences.PasswordEditTextPreference>
+        <!--android:defaultValue="u1rRWTssNv0p"-->
+        <com.github.shadowsocks.preferences.SummaryListPreference
+
+                android:key="encMethod"
+                android:entries="@array/enc_method_entry"
+                android:entryValues="@array/enc_method_value"
+                android:title="@string/enc_method">
+        </com.github.shadowsocks.preferences.SummaryListPreference>
+        <!--android:defaultValue="rc4"-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/feature_cat">
+
+        <com.github.shadowsocks.preferences.SummaryListPreference
+
+                android:key="route"
+                android:entries="@array/route_entry"
+                android:entryValues="@array/route_value"
+                android:summary="@string/route_list_summary"
+                android:title="@string/route_list">
+        </com.github.shadowsocks.preferences.SummaryListPreference>
+        <!--android:defaultValue="all"-->
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="isGlobalProxy"
+        android:disableDependentsState="true"
+        android:summary="@string/auto_set_proxy_summary"
+        android:title="@string/auto_set_proxy">
+        </CheckBoxPreference>
+        <!--android:defaultValue="true"-->
+        <Preference
+                android:key="proxyedApps"
+                android:dependency="isGlobalProxy"
+                android:summary="@string/proxied_apps_summary"
+                android:title="@string/proxied_apps">
+            <intent android:action="com.github.shadowsocks.AppManager"/>
+        </Preference>
+
+        <CheckBoxPreference
+                android:key="isUdpDns"
+                android:defaultValue="false"
+                android:summary="@string/udp_dns_summary"
+                android:title="@string/udp_dns">
+        </CheckBoxPreference>
+        <CheckBoxPreference
+                android:key="isAutoConnect"
+                android:summary="@string/auto_connect_summary"
+                android:title="@string/auto_connect">
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+<!-- From: file:/home/zouyiran/IdeaProjects/shadowsocks-android/src/main/res/xml/pref_all.xml -->

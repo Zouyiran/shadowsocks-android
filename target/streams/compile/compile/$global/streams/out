@@ -1,0 +1,16 @@
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/Shadowsocks.class:Call requires API level 18 (current min is 16): android.app.ActionBar#setHomeAsUpIndicator[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/Shadowsocks.class:Call requires API level 21 (current min is 16): android.view.Window#setStatusBarColor[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService$$anonfun$flushDns$1.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getNetworkInfo[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService$$anonfun$setDnsForAllNetwork$1.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getLinkProperties[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService$$anonfun$setDnsForAllNetwork$1.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getNetworkInfo[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService$$anonfun$setDnsForAllNetwork$1.class:Call requires API level 21 (current min is 16): android.net.LinkProperties#getDnsServers[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getAllNetworks[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getAllNetworks[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksNatService.class:Call requires API level 21 (current min is 16): android.net.ConnectivityManager#getAllNetworks[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService$$anonfun$startVpn$2.class:Call requires API level 21 (current min is 16): android.net.VpnService.Builder#addAllowedApplication[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService$$anonfun$startVpn$2.class:Call requires API level 21 (current min is 16): android.net.VpnService.Builder#addDisallowedApplication[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService.class:Call requires API level 21 (current min is 16): android.net.VpnService.Builder#addDisallowedApplication[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService.class:Call requires API level 21 (current min is 16): android.net.VpnService.Builder#addDisallowedApplication[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService.class:Call requires API level 21 (current min is 16): android.net.VpnService.Builder#allowFamily[0m
+[0m[[31merror[0m] [0m[NewApi] target/android-bin/classes/com/github/shadowsocks/ShadowsocksVpnService.class:Field requires API level 21 (current min is 16): android.system.OsConstants#AF_INET6[0m
+[0m[[31merror[0m] [0mfound 15 errors, 0 warnings[0m

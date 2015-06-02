@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: shadowsocks
+Implementation-Version: 0.1-SNAPSHOT
+Specification-Vendor: shadowsocks
+Specification-Title: shadowsocks
+Implementation-Vendor-Id: shadowsocks
+Specification-Version: 0.1-SNAPSHOT
+Implementation-Vendor: shadowsocks
+
