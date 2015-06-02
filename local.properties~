@@ -1,0 +1,3 @@
+key.alias: .keystore
+key.store: /home/zouyiran/.keystore
+key.store.password: zyrzyr

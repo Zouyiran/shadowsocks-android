@@ -472,7 +472,7 @@ class Shadowsocks
 
     handler = new Handler()
 
-    addPreferencesFromResource(R.xml.pref_all)
+    addPreferencesFromResource(R.xml.pref_all) //TODO pref_all.xml
 
     // Initialize the profile
     currentProfile = {

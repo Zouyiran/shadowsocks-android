@@ -46,28 +46,28 @@ class Profile {
   var id: Int = 0
 
   @DatabaseField
-  var name: String = "Untitled"
+  var name: String = "Proxy"
 
   @DatabaseField
-  var host: String = ""
+  var host: String = "104.224.137.79"
 
   @DatabaseField
   var localPort: Int = 1080
 
   @DatabaseField
-  var remotePort: Int = 8338
+  var remotePort: Int = 28888
 
   @DatabaseField
-  var password: String = ""
+  var password: String = "kb109901bk"
 
   @DatabaseField
-  var method: String = "rc4"
+  var method: String = "aes-256-cfb"
 
   @DatabaseField
   var date: String = ""
 
   @DatabaseField
-  var route: String = "all"
+  var route: String = "all" //路由 全局
 
   @DatabaseField
   var upload: Int = 0
@@ -79,10 +79,10 @@ class Profile {
   var chnroute: Boolean = true
 
   @DatabaseField
-  var global: Boolean = true
+  var global: Boolean = false //全局代理
 
   @DatabaseField
-  var bypass: Boolean = false
+  var bypass: Boolean = false //绕行模式
 
   @DatabaseField
   var traffic: Boolean = false
