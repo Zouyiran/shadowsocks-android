@@ -490,6 +490,10 @@ class Shadowsocks
       }
     }
 
+//    val isGlobalProxy:Preference = findPreference("isGlobalProxy")
+//    val functionsetting:PreferenceGroup = findPreference("functionsetting").asInstanceOf[PreferenceGroup]
+//    functionsetting.removePreference(isGlobalProxy)
+
     // Initialize drawer
     menuAdapter.setActiveId(settings.getInt(Key.profileId, -1))
     menuAdapter.setListener(this)

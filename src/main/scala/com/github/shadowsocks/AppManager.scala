@@ -92,7 +92,7 @@ object AppManager {
     val appList = packageManager.getInstalledApplications(0)
 
     appList.filter(a => a.uid >= 10000
-      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending")).map { //TODO
+      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending")).map { //TODO package filter
       case a =>
         val uid = a.uid
         val userName = uid.toString
@@ -130,7 +130,7 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
     val appList = packageManager.getInstalledApplications(0)
 
     appList.filter(a => a.uid >= 10000
-      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending") //TODO
+      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending") //TODO package filter
       && packageManager.getApplicationLabel(a) != null
       && packageManager.getApplicationIcon(a) != null).map {
       a =>

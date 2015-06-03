@@ -31,19 +31,19 @@
 # view AndroidManifest.xml #generated:47
 -keep class com.github.shadowsocks.ShadowsocksVpnService { <init>(...); }
 
-# view res/xml/pref_all.xml #generated:37
+# view res/xml/pref_all.xml #generated:47
 -keep class com.github.shadowsocks.preferences.PasswordEditTextPreference { <init>(...); }
 
-# view res/xml/pref_all.xml #generated:7
+# view res/xml/pref_all.xml #generated:9
 -keep class com.github.shadowsocks.preferences.ProfileEditTextPreference { <init>(...); }
 
-# view res/xml/pref_all.xml #generated:14
-# view res/xml/pref_all.xml #generated:21
-# view res/xml/pref_all.xml #generated:29
+# view res/xml/pref_all.xml #generated:18
+# view res/xml/pref_all.xml #generated:27
+# view res/xml/pref_all.xml #generated:37
 -keep class com.github.shadowsocks.preferences.SummaryEditTextPreference { <init>(...); }
 
-# view res/xml/pref_all.xml #generated:45
-# view res/xml/pref_all.xml #generated:59
+# view res/xml/pref_all.xml #generated:57
+# view res/xml/pref_all.xml #generated:74
 -keep class com.github.shadowsocks.preferences.SummaryListPreference { <init>(...); }
 
 # view AndroidManifest.xml #generated:17
