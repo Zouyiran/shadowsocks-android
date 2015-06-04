@@ -157,7 +157,6 @@
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.SummaryEditTextPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:57[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:74[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.SummaryListPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0m# view AndroidManifest.xml #generated:17[0m

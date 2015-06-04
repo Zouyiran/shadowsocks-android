@@ -127,7 +127,7 @@ object Shadowsocks {
   val PROXY_PREFS = Array(Key.profileName, Key.proxy, Key.remotePort, Key.localPort, Key.sitekey,
     Key.encMethod)
   val FEATRUE_PREFS = Array(Key.route, Key.isGlobalProxy, Key.proxyedApps,
-    Key.isUdpDns, Key.isAutoConnect)
+    Key.isUdpDns, Key.isAutoConnect) //TODO
 
   val EXECUTABLES = Array(Executable.PDNSD, Executable.REDSOCKS, Executable.SS_TUNNEL, Executable.SS_LOCAL, Executable.TUN2SOCKS)
 
@@ -491,7 +491,6 @@ class Shadowsocks
     }
 
 //    val isGlobalProxy:Preference = findPreference("isGlobalProxy")
-//    val functionsetting:PreferenceGroup = findPreference("functionsetting").asInstanceOf[PreferenceGroup]
 //    functionsetting.removePreference(isGlobalProxy)
 
     // Initialize drawer
@@ -866,7 +865,7 @@ class Shadowsocks
     for (name <- Shadowsocks.FEATRUE_PREFS) {
       val pref = findPreference(name)
       if (pref != null) {
-        if (Seq(Key.isGlobalProxy, Key.proxyedApps)
+        if (Seq(Key.isGlobalProxy, Key.proxyedApps)  //TODO Seq(Key.isGlobalProxy, Key.proxyedApps)
           .contains(name)) {
           pref.setEnabled(enabled && (Utils.isLollipopOrAbove || !isVpnEnabled))
         } else {
@@ -882,7 +881,7 @@ class Shadowsocks
       val pref = findPreference(name)
       Shadowsocks.updatePreference(pref, name, profile)
     }
-    for (name <- Shadowsocks.FEATRUE_PREFS) {
+    for (name <- Shadowsocks.FEATRUE_PREFS) { //TODO Shadowsocks.FEATRUE_PREFS
       val pref = findPreference(name)
       Shadowsocks.updatePreference(pref, name, profile)
     }

@@ -62,35 +62,12 @@
                 android:title="@string/enc_method">
         </com.github.shadowsocks.preferences.SummaryListPreference>
         <!--android:defaultValue="rc4"-->
-
     </PreferenceCategory>
 
     <!-- 功能设置-->
     <PreferenceCategory
             android:key= "functionsetting"
             android:title="@string/feature_cat">
-
-        <!-- 路由-->
-        <com.github.shadowsocks.preferences.SummaryListPreference
-
-                android:key="route"
-                android:entries="@array/route_entry"
-                android:entryValues="@array/route_value"
-                android:summary="@string/route_list_summary"
-                android:title="@string/route_list">
-        </com.github.shadowsocks.preferences.SummaryListPreference>
-        <!--android:defaultValue="all"-->
-
-        <!-- 全局代理-->
-        <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="isGlobalProxy"
-        android:visibility="invisible"
-        android:disableDependentsState="true"
-        android:summary="@string/auto_set_proxy_summary"
-        android:title="@string/auto_set_proxy">
-        </CheckBoxPreference>
-        <!--android:defaultValue="true"-->
 
         <!-- 分应用代理-->
         <Preference
@@ -101,21 +78,55 @@
             <intent android:action="com.github.shadowsocks.AppManager"/>
         </Preference>
 
-        <!-- UDP转发-->
-        <CheckBoxPreference
-                android:key="isUdpDns"
-                android:defaultValue="false"
-                android:summary="@string/udp_dns_summary"
-                android:title="@string/udp_dns">
-        </CheckBoxPreference>
-
         <!--自动连接 -->
         <CheckBoxPreference
                 android:key="isAutoConnect"
                 android:summary="@string/auto_connect_summary"
                 android:title="@string/auto_connect">
         </CheckBoxPreference>
-
     </PreferenceCategory>
+
+    <!--&lt;!&ndash; 默认设置&ndash;&gt;-->
+    <!--<PreferenceCategory-->
+            <!--android:key= "defaultsetting"-->
+            <!--android:enabled="false"-->
+            <!--android:shouldDisableView="true"-->
+            <!--android:title="@string/default_cat">-->
+
+        <!--&lt;!&ndash; 路由&ndash;&gt;-->
+        <!--<com.github.shadowsocks.preferences.SummaryListPreference-->
+
+                <!--android:key="route"-->
+                <!--android:defaultValue="all"-->
+                <!--android:entries="@array/route_entry"-->
+                <!--android:entryValues="@array/route_value"-->
+                <!--android:summary="@string/route_list_summary"-->
+                <!--android:title="@string/route_list"-->
+                <!--android:selectable="false"-->
+                <!--android:textColor="@color/grey2">-->
+        <!--</com.github.shadowsocks.preferences.SummaryListPreference>-->
+
+        <!--&lt;!&ndash; 全局代理&ndash;&gt;-->
+        <!--<CheckBoxPreference-->
+                <!--android:defaultValue="false"-->
+                <!--android:key="isGlobalProxy"-->
+                <!--android:disableDependentsState="true"-->
+                <!--android:summary="@string/auto_set_proxy_summary"-->
+                <!--android:title="@string/auto_set_proxy"-->
+                <!--android:selectable="false"-->
+                <!--android:textColor="@color/grey2">-->
+        <!--</CheckBoxPreference>-->
+        <!--&lt;!&ndash;android:defaultValue="true"&ndash;&gt;-->
+
+        <!--&lt;!&ndash; UDP转发&ndash;&gt;-->
+        <!--<CheckBoxPreference-->
+                <!--android:key="isUdpDns"-->
+                <!--android:defaultValue="false"-->
+                <!--android:summary="@string/udp_dns_summary"-->
+                <!--android:title="@string/udp_dns"-->
+                <!--android:selectable="false"-->
+                <!--android:textColor="@color/grey2">-->
+        <!--</CheckBoxPreference>-->
+    <!--</PreferenceCategory>-->
 
 </PreferenceScreen>

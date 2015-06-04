@@ -9471,6 +9471,7 @@
     <string name="decline">Decline</string>
     <!-- From: file:/home/zouyiran/IdeaProjects/shadowsocks-android/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="default_cat">Default Settings</string>
     <string name="disable_nat">Turn off NAT mode.</string>
     <string name="dns_proxy">DNS Proxy</string>
     <string name="dns_proxy_summary">Redirect DNS queries to remote server</string>

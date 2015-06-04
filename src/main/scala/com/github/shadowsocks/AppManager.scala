@@ -297,14 +297,14 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
         .build()
     ImageLoader.getInstance().init(config)
 
-    val bypassSwitch = findViewById(R.id.bypassSwitch).asInstanceOf[Switch]
+//    val bypassSwitch = findViewById(R.id.bypassSwitch).asInstanceOf[Switch]//TODO bypass
     val prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext)
-    bypassSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener {
-      def onCheckedChanged(button: CompoundButton, checked: Boolean) {
-        prefs.edit().putBoolean(Key.isBypassApps, checked).commit()
-      }
-    })
-    bypassSwitch.setChecked(prefs.getBoolean(Key.isBypassApps, false))
+//    bypassSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener {
+//      def onCheckedChanged(button: CompoundButton, checked: Boolean) {
+//        prefs.edit().putBoolean(Key.isBypassApps, checked).commit()//TODO checked --> false
+//      }
+//    })
+//    bypassSwitch.setChecked(prefs.getBoolean(Key.isBypassApps, false))
 
     appListView = findViewById(R.id.applistview).asInstanceOf[ListView]
   }

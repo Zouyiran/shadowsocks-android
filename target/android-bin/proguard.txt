@@ -43,7 +43,6 @@
 -keep class com.github.shadowsocks.preferences.SummaryEditTextPreference { <init>(...); }
 
 # view res/xml/pref_all.xml #generated:57
-# view res/xml/pref_all.xml #generated:74
 -keep class com.github.shadowsocks.preferences.SummaryListPreference { <init>(...); }
 
 # view AndroidManifest.xml #generated:17

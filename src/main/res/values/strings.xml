@@ -48,6 +48,10 @@
   <string name="udp_dns">UDP Forwarding</string>
   <string name="udp_dns_summary">Forward UDP packets to remote server</string>
 
+  <!-- default category -->
+  <string name="default_cat">Default Settings</string>
+
+
   <!-- notification category -->
   <string name="forward_success">Shadowsocks started.</string>
   <string name="service_running">Connected to "%s"</string>
