@@ -61,7 +61,7 @@
     <string name="profile_summary">配置文件名称</string>
     <string name="profiles">配置文件</string>
     <string name="proxied_apps">分应用代理</string>
-    <string name="proxied_apps_summary">为特定应用程序设置代理</string>
+    <string name="proxied_apps_summary">为部落冲突设置代理</string>
     <string name="proxied_help">分应用代理</string>
     <string name="proxy">服务器</string>
     <string name="proxy_cat">服务器设置</string>

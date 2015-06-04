@@ -244,27 +244,28 @@ object ConfigUtils {
       config.localPort)
   }
 
+  //TODO 自动初始化default
   def load(settings: SharedPreferences): Config = {
-    val isGlobalProxy = settings.getBoolean(Key.isGlobalProxy, false)
-    val isGFWList = settings.getBoolean(Key.isGFWList, false)
-    val isBypassApps = settings.getBoolean(Key.isBypassApps, false)
-    val isTrafficStat = settings.getBoolean(Key.isTrafficStat, false)
-    val isUdpDns = settings.getBoolean(Key.isUdpDns, false)
+    val isGlobalProxy = settings.getBoolean(Key.isGlobalProxy,false)//false
+    val isGFWList = settings.getBoolean(Key.isGFWList, false)//false
+    val isBypassApps = settings.getBoolean(Key.isBypassApps, false)//false
+    val isTrafficStat = settings.getBoolean(Key.isTrafficStat, false)//false
+    val isUdpDns = settings.getBoolean(Key.isUdpDns, false)//false
 
     val profileName = settings.getString(Key.profileName, "default")
-    val proxy = settings.getString(Key.proxy, "127.0.0.1")
-    val sitekey = settings.getString(Key.sitekey, "default")
-    val encMethod = settings.getString(Key.encMethod, "table")
+    val proxy = settings.getString(Key.proxy, "")
+    val sitekey = settings.getString(Key.sitekey, "")
+    val encMethod = settings.getString(Key.encMethod, "")
     val route = settings.getString(Key.route, "all")
 
     val remotePort: Int = try {
-      settings.getString(Key.remotePort, "1984").toInt
+      settings.getString(Key.remotePort, "").toInt
     } catch {
       case ex: NumberFormatException =>
         1984
     }
     val localPort: Int = try {
-      settings.getString(Key.localPort, "1984").toInt
+      settings.getString(Key.localPort, "").toInt
     } catch {
       case ex: NumberFormatException =>
         1984

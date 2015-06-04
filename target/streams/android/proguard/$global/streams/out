@@ -145,18 +145,19 @@
 [0m[[0mdebug[0m] [0m# view AndroidManifest.xml #generated:47[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.ShadowsocksVpnService { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:47[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:60[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.PasswordEditTextPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:9[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:22[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.ProfileEditTextPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:18[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:27[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:37[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:31[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:40[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:50[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.SummaryEditTextPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:57[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:70[0m
+[0m[[0mdebug[0m] [0m# view res/xml/pref_all.xml #generated:88[0m
 [0m[[0mdebug[0m] [0m-keep class com.github.shadowsocks.preferences.SummaryListPreference { <init>(...); }[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0m# view AndroidManifest.xml #generated:17[0m

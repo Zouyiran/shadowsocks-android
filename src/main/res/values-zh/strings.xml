@@ -30,7 +30,7 @@
   <string name="auto_set_proxy">全局代理</string>
   <string name="auto_set_proxy_summary">设置系统代理</string>
   <string name="proxied_apps">分应用代理</string>
-  <string name="proxied_apps_summary">为特定应用程序设置代理</string>
+  <string name="proxied_apps_summary">为部落冲突设置代理</string>
   <string name="proxied_help">分应用代理</string>
   <string name="bypass_apps">绕行模式</string>
   <string name="bypass_apps_summary">启用该选项，以使所选应用程序的流量不经过代理</string>

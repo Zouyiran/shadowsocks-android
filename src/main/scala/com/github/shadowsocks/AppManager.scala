@@ -68,7 +68,7 @@ import com.github.shadowsocks.utils.{Utils, Scheme, Key}
 import scala.concurrent.ops._
 import scala.language.implicitConversions
 
-case class ProxiedApp(uid: Int, name: String, packageName: String, var proxied: Boolean)
+case class ProxiedApp(uid: Int, name: String, packageName: String, var proxied: Boolean = true)
 
 class ObjectArrayTools[T <: AnyRef](a: Array[T]) {
   def binarySearch(key: T) = {
@@ -92,13 +92,13 @@ object AppManager {
     val appList = packageManager.getInstalledApplications(0)
 
     appList.filter(a => a.uid >= 10000
-      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending")).map { //TODO package filter
+      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending" || a.packageName == "com.ctcc.proxybrowser")).map { //TODO package filter  com.ctcc.proxybrowser
       case a =>
         val uid = a.uid
         val userName = uid.toString
         val name = packageManager.getApplicationLabel(a).toString
         val packageName = a.packageName
-        val proxied = proxiedApps.binarySearch(userName) >= 0
+        val proxied = true//proxiedApps.binarySearch(userName) >= 0
         new ProxiedApp(uid, name, packageName, proxied)
     }.toArray
   }
@@ -130,7 +130,7 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
     val appList = packageManager.getInstalledApplications(0)
 
     appList.filter(a => a.uid >= 10000
-      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending") //TODO package filter
+      && (a.packageName == "com.supercell.clashofclans" || a.packageName == "com.android.vending" || a.packageName == "com.ctcc.proxybrowser") //TODO package filter  com.android.vending
       && packageManager.getApplicationLabel(a) != null
       && packageManager.getApplicationIcon(a) != null).map {
       a =>
@@ -138,7 +138,7 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
         val userName = uid.toString
         val name = packageManager.getApplicationLabel(a).toString
         val packageName = a.packageName
-        val proxied = (proxiedApps binarySearch userName) >= 0
+        val proxied = true//(proxiedApps binarySearch userName) >= 0
         new ProxiedApp(uid, name, packageName, proxied)
     }.toArray
   }
@@ -160,7 +160,7 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
         var convertView = view
         var entry: ListEntry = null
         if (convertView == null) {
-          convertView = getLayoutInflater.inflate(R.layout.layout_apps_item, parent, false)
+          convertView = getLayoutInflater.inflate(R.layout.layout_apps_item, parent, false)//TODO R.layout.layout_apps_item
           val icon = convertView.findViewById(R.id.itemicon).asInstanceOf[ImageView]
           val box = convertView.findViewById(R.id.itemcheck).asInstanceOf[CheckBox]
           val text = convertView.findViewById(R.id.itemtext).asInstanceOf[TextView]
@@ -168,7 +168,7 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
           entry.text.setOnClickListener(AppManager.this)
           entry.text.setOnClickListener(AppManager.this)
           convertView.setTag(entry)
-          entry.box.setOnCheckedChangeListener(AppManager.this)
+          //entry.box.setOnCheckedChangeListener(AppManager.this)
         } else {
           entry = convertView.getTag.asInstanceOf[ListEntry]
         }
@@ -189,7 +189,8 @@ class AppManager extends Activity with OnCheckedChangeListener with OnClickListe
         entry.text.setText(app.name)
         val box: CheckBox = entry.box
         box.setTag(app)
-        box.setChecked(app.proxied)
+        box.setClickable(false)
+        box.setChecked(app.proxied) //TODO 检查是否设置成代理   app.proxied
         entry.text.setTag(box)
         convertView
       }

@@ -126,8 +126,7 @@ object Shadowsocks {
   val PREFS_NAME = "Shadowsocks"
   val PROXY_PREFS = Array(Key.profileName, Key.proxy, Key.remotePort, Key.localPort, Key.sitekey,
     Key.encMethod)
-  val FEATRUE_PREFS = Array(Key.route, Key.isGlobalProxy, Key.proxyedApps,
-    Key.isUdpDns, Key.isAutoConnect) //TODO
+  val FEATRUE_PREFS = Array(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect) //TODO  Array(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect)
 
   val EXECUTABLES = Array(Executable.PDNSD, Executable.REDSOCKS, Executable.SS_TUNNEL, Executable.SS_LOCAL, Executable.TUN2SOCKS)
 
@@ -163,9 +162,9 @@ object Shadowsocks {
       case Key.localPort => updateSummaryEditTextPreference(pref, profile.localPort.toString)
       case Key.sitekey => updatePasswordEditTextPreference(pref, profile.password)
       case Key.encMethod => updateListPreference(pref, profile.method)
-      case Key.route => updateListPreference(pref, profile.route)
-      case Key.isGlobalProxy => updateCheckBoxPreference(pref, profile.global)
-      case Key.isUdpDns => updateCheckBoxPreference(pref, profile.udpdns)
+      case Key.route => updateListPreference(pref,"all")//TODO profile.route
+      case Key.isGlobalProxy => updateCheckBoxPreference(pref, false)//TODO profile.global
+      case Key.isUdpDns => updateCheckBoxPreference(pref,false)//TODO   profile.udpdns
       case _ =>
     }
   }
@@ -859,19 +858,33 @@ class Shadowsocks
     for (name <- Shadowsocks.PROXY_PREFS) {
       val pref = findPreference(name)
       if (pref != null) {
-        pref.setEnabled(enabled)
+        pref.setEnabled(false)//enabled
       }
     }
-    for (name <- Shadowsocks.FEATRUE_PREFS) {
+    for (name <- Shadowsocks.FEATRUE_PREFS) {//Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect
       val pref = findPreference(name)
-      if (pref != null) {
-        if (Seq(Key.isGlobalProxy, Key.proxyedApps)  //TODO Seq(Key.isGlobalProxy, Key.proxyedApps)
-          .contains(name)) {
-          pref.setEnabled(enabled && (Utils.isLollipopOrAbove || !isVpnEnabled))
-        } else {
+      if(pref != null){
+        if(Seq(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns).contains(name)){
+          pref.setEnabled(false)
+        }else{
           pref.setEnabled(enabled)
         }
       }
+//      if (pref != null) {
+//        if (Seq(Key.isGlobalProxy, Key.proxyedApps)  //TODO Seq(Key.isGlobalProxy, Key.proxyedApps)
+//          .contains(name)) {
+//          pref.setEnabled(enabled && (Utils.isLollipopOrAbove || !isVpnEnabled))
+//        }else{
+//          if(Seq(Key.isGlobalProxy, Key.route, Key.isUdpDns).contains(name)){
+//            pref.setEnabled(false)
+//          }else{
+//            pref.setEnabled(enabled)
+//          }
+//        }
+//        if(Seq(Key.isGlobalProxy).contains(name)){
+//          pref.setEnabled(false)
+//        }
+//      }
     }
   }
 
@@ -879,11 +892,16 @@ class Shadowsocks
     val profile = currentProfile
     for (name <- Shadowsocks.PROXY_PREFS) {
       val pref = findPreference(name)
-      Shadowsocks.updatePreference(pref, name, profile)
+      if (pref != null){
+        Shadowsocks.updatePreference(pref, name, profile)
+      }
+
     }
     for (name <- Shadowsocks.FEATRUE_PREFS) { //TODO Shadowsocks.FEATRUE_PREFS
       val pref = findPreference(name)
-      Shadowsocks.updatePreference(pref, name, profile)
+      if (pref != null){
+        Shadowsocks.updatePreference(pref, name, profile)
+      }
     }
   }
 

@@ -9511,7 +9511,7 @@
     <string name="profile_summary">Profile name</string>
     <string name="profiles">Profiles</string>
     <string name="proxied_apps">Per-App Proxy</string>
-    <string name="proxied_apps_summary">Set proxy for selected apps</string>
+    <string name="proxied_apps_summary">Set proxy for COC</string>
     <string name="proxied_help">Per-App Proxy</string>
     <string name="proxy">Server</string>
     <string name="proxy_cat">Server Settings</string>
