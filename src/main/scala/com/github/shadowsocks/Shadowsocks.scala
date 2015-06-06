@@ -126,7 +126,7 @@ object Shadowsocks {
   val PREFS_NAME = "Shadowsocks"
   val PROXY_PREFS = Array(Key.profileName, Key.proxy, Key.remotePort, Key.localPort, Key.sitekey,
     Key.encMethod)
-  val FEATRUE_PREFS = Array(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect) //TODO  Array(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect)
+  val FEATRUE_PREFS = Array(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect)
 
   val EXECUTABLES = Array(Executable.PDNSD, Executable.REDSOCKS, Executable.SS_TUNNEL, Executable.SS_LOCAL, Executable.TUN2SOCKS)
 
@@ -156,12 +156,12 @@ object Shadowsocks {
 
   def updatePreference(pref: Preference, name: String, profile: Profile) {
     name match {
-      case Key.profileName => updateProfileEditTextPreference(pref, profile.name)
-      case Key.proxy => updateSummaryEditTextPreference(pref, profile.host)
-      case Key.remotePort => updateSummaryEditTextPreference(pref, profile.remotePort.toString)
-      case Key.localPort => updateSummaryEditTextPreference(pref, profile.localPort.toString)
-      case Key.sitekey => updatePasswordEditTextPreference(pref, profile.password)
-      case Key.encMethod => updateListPreference(pref, profile.method)
+      case Key.profileName => updateProfileEditTextPreference(pref, "Proxy")//profile.name
+      case Key.proxy => updateSummaryEditTextPreference(pref, "104.224.137.79")//profile.host
+      case Key.remotePort => updateSummaryEditTextPreference(pref, "28888")//profile.remotePort.toString
+      case Key.localPort => updateSummaryEditTextPreference(pref, "1080")//profile.localPort.toString
+      case Key.sitekey => updatePasswordEditTextPreference(pref, "kb109901bk")//profile.password
+      case Key.encMethod => updateListPreference(pref, "aes-256-cfb")//profile.method
       case Key.route => updateListPreference(pref,"all")//TODO profile.route
       case Key.isGlobalProxy => updateCheckBoxPreference(pref, false)//TODO profile.global
       case Key.isUdpDns => updateCheckBoxPreference(pref,false)//TODO   profile.udpdns
@@ -858,34 +858,34 @@ class Shadowsocks
     for (name <- Shadowsocks.PROXY_PREFS) {
       val pref = findPreference(name)
       if (pref != null) {
-        pref.setEnabled(false)//enabled
+        pref.setEnabled(false) //TODO enabled
       }
     }
-    for (name <- Shadowsocks.FEATRUE_PREFS) {//Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect
+
+    for (name <- Shadowsocks.FEATRUE_PREFS) {//TODO Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns, Key.isAutoConnect
       val pref = findPreference(name)
       if(pref != null){
-        if(Seq(Key.route, Key.isGlobalProxy, Key.proxyedApps, Key.isUdpDns).contains(name)){
+        if(Seq(Key.route, Key.isGlobalProxy, Key.isUdpDns,Key.proxyedApps).contains(name)){ //
           pref.setEnabled(false)
         }else{
           pref.setEnabled(enabled)
         }
       }
-//      if (pref != null) {
-//        if (Seq(Key.isGlobalProxy, Key.proxyedApps)  //TODO Seq(Key.isGlobalProxy, Key.proxyedApps)
-//          .contains(name)) {
-//          pref.setEnabled(enabled && (Utils.isLollipopOrAbove || !isVpnEnabled))
-//        }else{
-//          if(Seq(Key.isGlobalProxy, Key.route, Key.isUdpDns).contains(name)){
-//            pref.setEnabled(false)
-//          }else{
+    }
+
+
+//      for (name <- Shadowsocks.FEATRUE_PREFS) {
+//        val pref = findPreference(name)
+//        if (pref != null) {
+//          if (Seq(Key.isGlobalProxy, Key.proxyedApps)
+//            .contains(name)) {
+//            pref.setEnabled(enabled && (Utils.isLollipopOrAbove || !isVpnEnabled))
+//          } else {
 //            pref.setEnabled(enabled)
 //          }
 //        }
-//        if(Seq(Key.isGlobalProxy).contains(name)){
-//          pref.setEnabled(false)
-//        }
 //      }
-    }
+
   }
 
   private def updatePreferenceScreen() {
@@ -897,7 +897,7 @@ class Shadowsocks
       }
 
     }
-    for (name <- Shadowsocks.FEATRUE_PREFS) { //TODO Shadowsocks.FEATRUE_PREFS
+    for (name <- Shadowsocks.FEATRUE_PREFS) {
       val pref = findPreference(name)
       if (pref != null){
         Shadowsocks.updatePreference(pref, name, profile)
