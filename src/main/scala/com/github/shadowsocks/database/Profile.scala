@@ -49,16 +49,16 @@ class Profile {
   var name: String = "Proxy"
 
   @DatabaseField
-  var host: String = "104.224.137.79"
+  var host: String = "103.251.90.116"//104.224.137.79
 
   @DatabaseField
   var localPort: Int = 1080
 
   @DatabaseField
-  var remotePort: Int = 28888
+  var remotePort: Int = 8001 //28888
 
   @DatabaseField
-  var password: String = "kb109901bk"
+  var password: String = "kb109kb109"//kb109901bk
 
   @DatabaseField
   var method: String = "aes-256-cfb"

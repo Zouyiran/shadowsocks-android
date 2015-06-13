@@ -157,10 +157,10 @@ object Shadowsocks {
   def updatePreference(pref: Preference, name: String, profile: Profile) {
     name match {
       case Key.profileName => updateProfileEditTextPreference(pref, "Proxy")//profile.name
-      case Key.proxy => updateSummaryEditTextPreference(pref, "104.224.137.79")//profile.host
-      case Key.remotePort => updateSummaryEditTextPreference(pref, "28888")//profile.remotePort.toString
+      case Key.proxy => updateSummaryEditTextPreference(pref, "103.251.90.116")//profile.host
+      case Key.remotePort => updateSummaryEditTextPreference(pref, "8001")//profile.remotePort.toString
       case Key.localPort => updateSummaryEditTextPreference(pref, "1080")//profile.localPort.toString
-      case Key.sitekey => updatePasswordEditTextPreference(pref, "kb109901bk")//profile.password
+      case Key.sitekey => updatePasswordEditTextPreference(pref, "kb109kb109")//profile.password
       case Key.encMethod => updateListPreference(pref, "aes-256-cfb")//profile.method
       case Key.route => updateListPreference(pref,"all")//TODO profile.route
       case Key.isGlobalProxy => updateCheckBoxPreference(pref, false)//TODO profile.global
